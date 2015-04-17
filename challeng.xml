@@ -3,45 +3,45 @@
     <next>
       <block type="movement_forward" id="10">
         <next>
-          <block type="robot_delay" id="12" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="19">
-                <field name="NUM">1000</field>
-              </block>
-            </value>
+          <block type="oled_color" id="104">
+            <field name="OBJECT">BLACK</field>
             <next>
-              <block type="movement_stop" id="86">
+              <block type="oled_drawtext" id="37">
+                <field name="TEXT">cool</field>
                 <next>
-                  <block type="oled_setend" id="28" inline="true" disabled="true">
-                    <value name="ENDX">
-                      <block type="math_number" id="44">
-                        <field name="NUM">10</field>
-                      </block>
-                    </value>
-                    <value name="ENDY">
-                      <block type="math_number" id="51">
-                        <field name="NUM">10</field>
+                  <block type="led_select" id="60" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="67">
+                        <field name="NUM">0</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_color" id="104">
-                        <field name="OBJECT">BLACK</field>
+                      <block type="robot_delay" id="69" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="76">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="oled_drawtext" id="37">
-                            <field name="TEXT">cool</field>
+                          <block type="robot_delay" id="12" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="19">
+                                <field name="NUM">1000</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="led_select" id="60" inline="true">
-                                <field name="ACTION">FLASH</field>
-                                <value name="LED">
-                                  <block type="math_number" id="67">
-                                    <field name="NUM">0</field>
-                                  </block>
-                                </value>
+                              <block type="movement_stop" id="86">
                                 <next>
-                                  <block type="robot_delay" id="69" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="76">
-                                        <field name="NUM">200</field>
+                                  <block type="oled_setend" id="28" inline="true" disabled="true">
+                                    <value name="ENDX">
+                                      <block type="math_number" id="44">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <value name="ENDY">
+                                      <block type="math_number" id="51">
+                                        <field name="NUM">10</field>
                                       </block>
                                     </value>
                                   </block>
