@@ -12,7 +12,7 @@
             <next>
               <block type="movement_stop" id="86">
                 <next>
-                  <block type="oled_setend" id="28" inline="true">
+                  <block type="oled_setend" id="28" inline="true" disabled="true">
                     <value name="ENDX">
                       <block type="math_number" id="44">
                         <field name="NUM">10</field>
