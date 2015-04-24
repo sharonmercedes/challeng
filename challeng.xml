@@ -1,62 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1" x="150" y="192">
+  <block type="movement_forward" id="24" x="75" y="54">
     <next>
-      <block type="movement_forward" id="2">
-        <next>
-          <block type="oled_color" id="3">
-            <field name="OBJECT">BLACK</field>
-            <next>
-              <block type="oled_drawtext" id="4">
-                <field name="TEXT">cool</field>
-                <next>
-                  <block type="led_select" id="5" inline="true">
-                    <field name="ACTION">FLASH</field>
-                    <value name="LED">
-                      <block type="math_number" id="6">
-                        <field name="NUM">0</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="robot_delay" id="7" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="8">
-                            <field name="NUM">200</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="robot_delay" id="9" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="10">
-                                <field name="NUM">1000</field>
-                              </block>
-                            </value>
-                            <next>
-                              <block type="movement_stop" id="11">
-                                <next>
-                                  <block type="oled_setend" id="12" inline="true" disabled="true">
-                                    <value name="ENDX">
-                                      <block type="math_number" id="13">
-                                        <field name="NUM">10</field>
-                                      </block>
-                                    </value>
-                                    <value name="ENDY">
-                                      <block type="math_number" id="14">
-                                        <field name="NUM">10</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
+      <block type="robot_delay" id="26" inline="true">
+        <value name="DELAY">
+          <block type="math_number" id="33">
+            <field name="NUM">100</field>
           </block>
+        </value>
+        <next>
+          <block type="movement_stop" id="43"></block>
         </next>
       </block>
     </next>
