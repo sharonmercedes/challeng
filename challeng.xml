@@ -1,28 +1,39 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="24" x="75" y="54">
-    <next>
-      <block type="movement_right" id="64">
-        <next>
-          <block type="movement_left" id="53">
+  <block type="controls_whileUntil" id="324" inline="false" x="92" y="40">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="399">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="508" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="sensor_object" id="610">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_right" id="632"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="642">
             <next>
-              <block type="movement_right" id="74">
-                <next>
-                  <block type="robot_delay" id="26" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="33">
-                        <field name="NUM">5000</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="43"></block>
-                    </next>
+              <block type="robot_delay" id="654" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="673">
+                    <field name="NUM">100</field>
                   </block>
-                </next>
+                </value>
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
+    </statement>
+    <next>
+      <block type="movement_stop" id="683"></block>
     </next>
   </block>
 </xml>
