@@ -15,21 +15,20 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="703">
-            <next>
-              <block type="robot_delay" id="654" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="673">
-                    <field name="NUM">400</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
+          <block type="movement_right" id="703"></block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="642"></block>
         </statement>
+        <next>
+          <block type="robot_delay" id="654" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="673">
+                <field name="NUM">400</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
     <next>
