@@ -15,10 +15,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="703"></block>
-        </statement>
-        <statement name="ELSE">
-          <block type="movement_forward" id="642">
+          <block type="movement_right" id="703">
             <next>
               <block type="robot_delay" id="654" inline="true">
                 <value name="DELAY">
@@ -29,6 +26,9 @@
               </block>
             </next>
           </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="642"></block>
         </statement>
       </block>
     </statement>
